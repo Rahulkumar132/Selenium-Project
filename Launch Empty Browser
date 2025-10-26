@@ -1,0 +1,84 @@
+#write a script to launch empty chrome browser
+'''
+from selenium.webdriver import Chrome
+c=Chrome()
+'''
+
+#write a script to launch empty Firefox browser
+
+'''
+from selenium.webdriver import  Firefox
+f=Firefox()
+'''
+
+#write a script to launch empty Edge browser
+'''
+from selenium.webdriver import Edge
+e=Edge()
+'''
+
+#write a script to launch empty chrome browser for longest time
+from selenium.webdriver import Chrome, ChromeOptions
+o=ChromeOptions()
+o.add_experimental_option('detach',True)
+driver=Chrome(options=o)
+
+
+##write a script to Enter  Secured URl
+'''
+driver.get("https://www.facebook.com")
+'''
+##write a script to Enter non Secured URl
+'''
+driver.get("http://www.facebook.com")
+
+'''
+##write a script to  Enter for invalid  URl
+'''
+driver.get("facebook.com")
+
+'''
+#how to close the window
+#close()
+
+'''
+from time import sleep
+driver.get("http://www.facebook.com")
+sleep(4)
+driver.close()
+'''
+
+
+
+#quit()
+#from time import sleep
+'''
+driver.get("https://www.facebook.com")
+sleep(4)
+driver.quit()
+'''
+
+
+#Write  a script to maximize , minimize and full screen
+'''
+
+driver.get("https://www.facebook.com")
+sleep(2)
+driver.maximize_window()
+sleep(2)
+driver.minimize_window()
+sleep(3)
+driver.fullscreen_window()
+
+'''
+
+
+
+
+
+
+
+
+
+
+
