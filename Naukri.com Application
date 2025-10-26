@@ -1,0 +1,36 @@
+from time import sleep
+
+from selenium.webdriver import  Chrome, ChromeOptions
+from selenium.webdriver.common.by import By
+
+o=ChromeOptions()
+o.add_experimental_option('detach',True)
+driver=Chrome(options=o)
+driver.get("https://www.naukri.com/")
+driver.maximize_window()
+sleep(2)
+driver.find_element(By.ID,'register_Layer').click()
+sleep(2)
+driver.find_element(By.ID,'name').send_keys('Rahul Kumar')
+sleep(2)
+driver.find_element(By.ID,'email').send_keys('rahulkumar.qa9@gmail.com')
+sleep(2)
+driver.find_element(By.ID,'password').send_keys('rahulku@133')
+sleep(2)
+driver.find_element(By.ID,'mobile').send_keys('7541921901')
+sleep(2)
+driver.find_element(By.CLASS_NAME,'main-3').click()
+sleep(2)
+'''driver.find_element(By.CLASS_NAME,'uploadResume.resman-btn-primary.resman-btn-small').click()
+sleep(2)'''
+driver.find_element(By.CLASS_NAME,'chk-label').click()
+sleep(2)
+driver.find_element(By.CLASS_NAME,'submitbtn.resman-btn-primary.resman-btn-regular').click()
+sleep(2)
+
+
+
+
+
+
+
